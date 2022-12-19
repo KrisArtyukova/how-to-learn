@@ -9,15 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /* ---------------- Секция header --------------- */
 
 .header {
@@ -42,6 +33,7 @@
 
 .header__title {
   display: flex;
+  position: absolute;
   align-items: center;
   width: 730px;
   height: 100%;
@@ -306,6 +298,10 @@
 }
 
 .table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
   margin: 0;
   width: 200px;
   line-height: 1.2;

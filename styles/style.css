@@ -9,18 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -29,3 +17,407 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+/* ---------------- Секция header --------------- */
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+ z-index: 2;
+  width: 228px;
+  height: 32px;
+}
+
+.logo__place_header {
+  position: absolute;
+  margin: 30px 0 0 64px;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  width: 730px;
+  height: 100%;
+  margin: 0;
+  margin-left: 64px;
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  position: absolute;
+  z-index: 2;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link::after {
+  color: #2f80ed;
+  content: '→';
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+.header__square-pic {
+  background-color: #2f80ed;
+  position: absolute;
+  height: 568px;
+  width: 568px;
+  background-size: 568px;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+}
+
+/* ---------------- ------------- --------------- */
+
+/* ---------------- Секция description --------------- */
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description p {
+  margin: 0;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 100px 0 100px 0;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+  gap: 30px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------- */
+
+/* -----------------Секция digits--------------------- */
+
+.digits p {
+  margin: 0;
+}
+
+.digits {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table {
+  list-style: none;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* --------------------------------------------------- */
+
+/* -----------------Секция feyman--------------------- */
+
+.feyman {
+  background-color: #f2f2f2;
+  position: relative;
+  height: 890px;
+  z-index: 1;
+}
+
+.feyman__title {
+  width: 648px;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feyman__subtitle {
+  text-align: center;
+  margin: auto;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.feyman__link {
+  position: absolute;
+  right: 48px;
+  height: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feyman__link::after {
+  color: #2f80ed;
+  content: '→';
+}
+
+.feyman__img {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* --------------------------------------------------- */
+
+/* -----------------Секция kaufman --------------------- */
+
+.kaufman {
+  background-color:  #1f1f1f;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.section-title__theme_dark {
+  margin: 0 auto;
+  padding-top: 90px;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color:#ffffff;
+}
+
+.section-subtitle__theme_dark {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  color:#ffffff;
+}
+
+.kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: 877px;
+}
+
+.table__theme_dark {
+  margin: auto;
+  padding-top: 80px;
+}
+
+.table__cell_theme_dark {
+  margin: 0;
+  width: 200px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.table__heading_theme-dark {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.table__text_theme-dark {
+  margin: 0;
+  padding-bottom: 90px;
+}
+
+/* --------------------------------------------------- */
+
+/* -----------------Секция footer --------------------- */
+
+.footer {
+  min-width: 350px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 711px;
+  width: 90%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo__place_footer {
+  width: 228px;
+  height: 32px;
+}
+
+.footer__author {
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.footer__links{
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.footer__column_content-info {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__column-heading {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.footer__column-heading-social {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: rgb(255 255 255);
+  display: flex;
+  gap: 5px;
+}
+
+.footer__social-icon::before {
+  width: 16px;
+  content: " ";
+  background-image: url(/tiktok-icon.svg);
+  position: absolute;
+  left: -16px;
+  top: -6px;
+  height:20px;
+}
+
+/* --------------------------------------------------- */

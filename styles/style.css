@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,6 +10,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 /* ---------------- Секция header --------------- */
 
 .header {
@@ -16,19 +18,22 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  position: relative;
   z-index: 2;
 }
 
 .logo {
- z-index: 2;
+  z-index: 2;
   width: 228px;
   height: 32px;
+  background-position: center;
+  background-size: contain;
 }
 
 .logo__place_header {
   position: absolute;
-  margin: 30px 0 0 64px;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
@@ -54,6 +59,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -95,10 +102,6 @@
   justify-content: center;
 }
 
-.description p {
-  margin: 0;
-}
-
 .two-columns {
   display: flex;
   width: 80%;
@@ -112,6 +115,8 @@
   font-size: 18px;
   font-weight: 400;
   color: #2f80ed;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -120,27 +125,29 @@
   width: 80%;
   min-width: 784px;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 /* --------------------------------------------------- */
 
 /* -----------------Секция digits--------------------- */
-
-.digits p {
-  margin: 0;
-}
 
 .digits {
   margin: 0 auto;
@@ -151,7 +158,6 @@
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -161,9 +167,11 @@
   text-align: center;
   width: 60%;
   margin: 0 auto;
+  padding-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+
 }
 
 .table {
@@ -172,16 +180,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .table__cell {
   width: 250px;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -196,16 +204,16 @@
 
 /* --------------------------------------------------- */
 
-/* -----------------Секция feyman--------------------- */
+/* -----------------Секция feynman--------------------- */
 
-.feyman {
+.feynman {
   background-color: #f2f2f2;
   position: relative;
   height: 890px;
   z-index: 1;
 }
 
-.feyman__title {
+.feynman__title {
   width: 648px;
   text-align: center;
   margin: auto;
@@ -215,7 +223,7 @@
   font-weight: 600;
 }
 
-.feyman__subtitle {
+.feynman__subtitle {
   text-align: center;
   margin: auto;
   margin-top: 70px;
@@ -224,7 +232,7 @@
   font-weight: 400;
 }
 
-.feyman__link {
+.feynman__link {
   position: absolute;
   right: 48px;
   height: 50%;
@@ -235,12 +243,12 @@
   color: #2f80ed;
 }
 
-.feyman__link::after {
+.feynman__link::after {
   color: #2f80ed;
   content: '→';
 }
 
-.feyman__img {
+.feynman__img {
   width: 867px;
   height: 637px;
   position: absolute;
@@ -281,7 +289,7 @@
 }
 
 .kaufman__triangle {
-  background-image: url(/images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   right: -210px;
   top: 0;
@@ -293,15 +301,12 @@
 }
 
 .table__theme_dark {
-  margin: auto;
-  padding-top: 80px;
+  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark {
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
-  margin: 0;
+  padding-top: 80px;
   width: 200px;
   line-height: 1.2;
   font-size: 18px;
@@ -309,13 +314,11 @@
 }
 
 .table__heading_theme-dark {
-  margin: 0;
-  padding-bottom: 20px;
+
 }
 
 .table__text_theme-dark {
-  margin: 0;
-  padding-bottom: 90px;
+  padding: 0;
 }
 
 /* --------------------------------------------------- */
@@ -323,45 +326,54 @@
 /* -----------------Секция footer --------------------- */
 
 .footer {
-  min-width: 350px;
+  min-height: 350px;
   background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
-  flex-basis: 711px;
   width: 90%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  margin: 0 auto;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 350px;
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 
-.logo__place_footer {
-  width: 228px;
-  height: 32px;
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author {
-  display: flex;
-  align-items: flex-end;
   color: #ffffff;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin: 0;
 }
 
 .footer__links{
   display: flex;
   width: 35%;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column_content_copyright {
+  width: 50%;
+  justify-content: space-between;
+  flex-basis: 711px;
+  min-height: 350px;
 }
 
 .footer__column_content-info {
@@ -369,12 +381,12 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
+  justify-content: flex-start;
 }
 
 .footer__column-heading {
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -383,11 +395,10 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 18px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .footer__column-heading-social {
@@ -396,19 +407,23 @@
   font-size: 18px;
   font-weight: 600;
   margin-top: 0;
+  justify-content: flex-start;
 }
 
 .footer__column-link {
   text-decoration: none;
-  color: rgb(255 255 255);
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__social-icon::before {
   width: 16px;
   content: " ";
-  background-image: url(/tiktok-icon.svg);
+  background-image: url(../tiktok-icon.svg);
   position: absolute;
   left: -16px;
   top: -6px;

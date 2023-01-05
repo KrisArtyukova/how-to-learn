@@ -2,27 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
 </head>
-<body>
-  <div class="page">
     <!--Шапка-->
+<body class="page">
     <header class="header">
-      <img class="logo logo__place_header" src="/images/logo_place_header.svg" alt="Логотип">
+      <div class="logo logo__place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
         Какие современные и эффективные подходы
         к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать</a>
       </p>
-      <img class="header__main-illustration" src="/images/header-image.png" alt="Картина Опять двойка">
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Картина Опять двойка">
       <div class="header__square-pic"></div>
     </header>
 <!--Конец шапки-->
-
+<main class="content">
 <!--Секция блок description-->
     <section class="description">
       <div class="two-columns">
@@ -52,7 +51,7 @@
       <ul class="table">
         <li class="table__cell">
           <h4 class="table__heading">86 миллиардов</h4>
-          <p class="table__text">Число нейронов в мозге</p>
+          <p class="table__text">Число нейронов в мозге человека</p>
         </li>
         <li class="table__cell">
           <h4 class="table__heading">2.1 миллиарда</h4>
@@ -91,11 +90,11 @@
 <!-- Конец Секция блок  digits-->
 
 <!-- Секция блок  feynman-->
-    <section class="feyman">
-        <h2 class="feyman__title">Метод Феймана</h2>
-        <p class="feyman__subtitle">Выучить и не забыть</p>
-        <a href="#" class="feyman__link">Подробнее</a>
-        <img class="feyman__img" src="/images/feynman.png" alt="Мистер Фейман">
+    <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <h3 class="feynman__subtitle">Выучить и не забыть</h3>
+        <a href="#" class="feynman__link">Подробнее</a>
+        <img class="feynman__img" src="./images/feynman.png" alt="Мистер Фейнман">
     </section>
 <!-- Конец Секция блок  feynman-->
 
@@ -148,35 +147,32 @@
         </ul>
     </section>
 <!-- Конец Секция блок  kaufman-->
-
+</main>
 <!--  Секция блок  footer-->
 <footer class="footer">
   <div class="footer__columns">
-      <div class="footer__column footer__column_content-copyright">
-        <img class="logo logo__place_footer" src="/images/logo_place_footer.svg" alt="Логотип">
-        <p class="footer__author">&copy; Кристина Артюкова</p>
-      </div>
-        <div class="footer__links">
-          <div class="footer__column footer__column_content-info">
-              <p class="footer__column-heading" > О Практикуме</p>
-              <div class="footer__column-links">
-                <a class="footer__column-link" href="#">Главная</a>
-                <a class="footer__column-link" href="#">Концепции</a>
-                <a class="footer__column-link" href="#">Наставники</a>
-              </div>
-          </div>
-          <div class="footer__column footer__column_content-social">
-              <p class="footer__column-heading-social">Соцсети</p>
-              <div class="footer__column-links">
-                <a class="footer__column-link" href="#"><img class="footer__social-icon" src="/youtube-icon.svg" alt="Иконка Ютуб"><span>YouTube</span></a>
-                <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Иконка ВКонтакте"><span>ВКонтакте</span> </a>
-                <a class="footer__column-link" href="#"><img class="footer__social-icon" src="/tiktok-icon.svg" alt="Иконка Тикток"><span>TikTok</span></a>
-              </div>
-        </div>
-      </div>
+    <div class="footer__column footer__column_content_copyright">
+      <div class="logo logo_place_footer"></div>
+      <p class="footer__author">&copy; Кристина Артюкова</p>
+    </div>
+    <div class="footer__column footer__column_content_info">
+      <p class="footer__column-heading"> О Практикуме</p>
+      <ul class="footer__column-links">
+        <li><a class="footer__column-link" href="#">Главная</a></li>
+        <li><a class="footer__column-link" href="#">Концепции</a></li>
+        <li><a class="footer__column-link" href="#">Наставники</a></li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column_content_social">
+      <p class="footer__column-heading">Соцсети</p>
+      <ul class="footer__column-links">
+        <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./youtube-icon.svg" alt="Иконка Ютуб">YouTube</a></li>
+        <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Иконка ВКонтакте">ВКонтакте</a></li>
+        <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./tiktok-icon.svg" alt="Иконка Тикток">TikTok</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 <!-- Конец Секция блок  footer-->
-  </div>
 </body>
 </html>

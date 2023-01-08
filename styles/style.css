@@ -14,11 +14,14 @@
 /* ---------------- Секция header --------------- */
 
 .header {
+  display: flex;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
   z-index: 2;
+  position: relative;
 }
 
 .logo {
@@ -29,7 +32,7 @@
   background-size: contain;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -37,11 +40,7 @@
 }
 
 .header__title {
-  display: flex;
-  position: absolute;
-  align-items: center;
-  width: 730px;
-  height: 100%;
+  max-width: 730px;
   margin: 0;
   margin-left: 64px;
   z-index: 2;
@@ -137,7 +136,7 @@
   padding: 0;
 }
 
-.span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -170,7 +169,7 @@
   padding-top: 20px;
   line-height: 34px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
 
 }
 
@@ -196,7 +195,7 @@
 }
 
 .table__text {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -207,9 +206,12 @@
 /* -----------------Секция feynman--------------------- */
 
 .feynman {
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
   background-color: #f2f2f2;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   z-index: 1;
 }
 
@@ -235,7 +237,7 @@
 .feynman__link {
   position: absolute;
   right: 48px;
-  height: 50%;
+  top: 448px;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
@@ -268,17 +270,13 @@
   position: relative;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   margin: 0 auto;
   padding-top: 90px;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
   color:#ffffff;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   margin: 0 auto;
   padding-top: 20px;
   width: 60%;
@@ -300,7 +298,7 @@
   background-size: 877px;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   margin-bottom: 90px;
 }
 
@@ -313,11 +311,7 @@
   font-weight: 400;
 }
 
-.table__heading_theme-dark {
-
-}
-
-.table__text_theme-dark {
+.table__text_theme_dark {
   padding: 0;
 }
 
@@ -326,25 +320,24 @@
 /* -----------------Секция footer --------------------- */
 
 .footer {
+  display: flex;
   min-height: 350px;
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   display: flex;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   justify-content: space-between;
-  align-items: flex-start;
-  min-height: 350px;
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .logo_place_footer {
@@ -361,27 +354,9 @@
   margin: 0;
 }
 
-.footer__links{
-  display: flex;
-  width: 35%;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
 .footer__column_content_copyright {
-  width: 50%;
   justify-content: space-between;
   flex-basis: 711px;
-  min-height: 350px;
-}
-
-.footer__column_content-info {
-  color: #ffffff;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 400;
-  justify-content: flex-start;
 }
 
 .footer__column-heading {
@@ -401,15 +376,6 @@
   list-style: none;
 }
 
-.footer__column-heading-social {
-  color: #ffffff;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 0;
-  justify-content: flex-start;
-}
-
 .footer__column-link {
   text-decoration: none;
   display: flex;
@@ -418,16 +384,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-}
-
-.footer__social-icon::before {
-  width: 16px;
-  content: " ";
-  background-image: url(../tiktok-icon.svg);
-  position: absolute;
-  left: -16px;
-  top: -6px;
-  height:20px;
 }
 
 /* --------------------------------------------------- */

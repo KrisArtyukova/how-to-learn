@@ -9,5 +9,4 @@
 
 .rotation {
   animation: rotate 20s linear infinite;
-  transform-origin: center;
 }

@@ -1,7 +1,7 @@
 .feynman__link {
   position: absolute;
   right: 48px;
-  top: 448px;
+  top: 50%;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
@@ -11,7 +11,7 @@
 
 .feynman__link:hover {
   opacity: 0.55;
-  transition: 0.15;
+  transition: 0.15s;
 }
 
 .feynman__link::after {

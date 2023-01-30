@@ -5,7 +5,7 @@
 
 .header__link:hover {
   opacity: 0.55;
-  transition: 0.15;
+  transition: 0.15s;
 }
 
 .header__link::after {
